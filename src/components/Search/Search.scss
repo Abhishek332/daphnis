@@ -1,0 +1,27 @@
+@import '../../index.scss';
+
+.search {
+	@include flexCenter(center, center, row);
+	color: $search;
+	width: 45%;
+	height: 45px;
+	border: 1.8px solid $search;
+	margin: 25px 10px;
+	padding-left: 14px;
+	input {
+		flex: 1;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		font-size: 20px;
+		padding: 0 7px;
+	}
+	button {
+		border: none;
+		height: 105%;
+		flex: 0.3;
+		background-color: $search;
+		color: white;
+		font-size: 18px;
+	}
+}
