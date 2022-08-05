@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.card-container {
+  @include flexCenter(space-between, center, row);
+  flex-wrap: wrap;
+  flex: 0.8;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
