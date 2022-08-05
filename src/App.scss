@@ -1,5 +1,6 @@
-@import "./index.scss";
+@import './index.scss';
 
 .main {
-  @include flexCenter(space-between, start, row);
+	@include flexCenter(space-between, start, row);
+	margin: 10px;
 }

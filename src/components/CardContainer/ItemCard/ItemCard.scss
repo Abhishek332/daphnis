@@ -1,65 +1,66 @@
-@import "../../../index.scss";
+@import '../../../index.scss';
 
 .item-card {
-  @include flexCenter(space-between, center, column);
-  width: 330px;
-  border-radius: 5px;
-  border: 0.5px solid $cardImage;
-  background-color: white;
-  margin: 10px;
-  overflow: hidden;
-  .image-container {
-    height: 200px;
-    width: 95%;
-    margin: 10px;
-    background-color: $cardImage;
-    position: relative;
-    img {
-      position: absolute;
-      height: 85%;
-      width: auto;
-    }
-  }
-  h6 {
-    font-size: 16px;
-    font-weight: medium;
-    margin: 8px 0;
-  }
-  h3 {
-    font-size: 24px;
-    span {
-      font-size: 18px;
-      color: $cardButton;
-    }
-  }
-  .company {
-    @include flexCenter(center, center, column);
-    margin: 20px;
-    font-size: 15px;
-    h6 {
-      margin-bottom: 8px;
-    }
-    span {
-      font-weight: bold;
-      text-transform: uppercase;
-      color: $cardButton;
-    }
-  }
-  .contact {
-    @include flexCenter(center, center, row);
-    color: $cardButton;
-    width: 100%;
-    padding: 10px;
-    border-top: 0.8px solid $cardButton;
-    text-decoration: none;
-    cursor: pointer;
-    h3 {
-      margin-left: 10px;
-    }
-  }
-  .bottom {
-    background-color: $cardBottom;
-    height: 16px;
-    width: 100%;
-  }
+	@include flexCenter(space-between, center, column);
+	width: 340px;
+	border-radius: 5px;
+	border: 0.5px solid $cardImage;
+	background-color: white;
+	overflow: hidden;
+	margin-bottom: 15px;
+	.image-container {
+		height: 220px;
+		width: 95%;
+		margin: 10px;
+		border-radius: 3px;
+		background-color: $cardImage;
+		position: relative;
+		img {
+			position: absolute;
+			height: 85%;
+			width: auto;
+		}
+	}
+	h6 {
+		font-size: 16px;
+		font-weight: medium;
+		margin: 8px 0;
+	}
+	h3 {
+		font-size: 21px;
+		span {
+			font-size: 18px;
+			color: $cardButton;
+		}
+	}
+	.company {
+		@include flexCenter(center, center, column);
+		margin: 20px;
+		font-size: 15px;
+		h6 {
+			margin-bottom: 8px;
+		}
+		span {
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $cardButton;
+		}
+	}
+	.contact {
+		@include flexCenter(center, center, row);
+		color: $cardButton;
+		width: 100%;
+		padding: 10px;
+		border-top: 0.8px solid $cardButton;
+		text-decoration: none;
+		cursor: pointer;
+		h3 {
+			margin-left: 10px;
+		}
+	}
+	.bottom {
+		background-color: $cardBottom;
+		height: 16px;
+		width: 100%;
+	}
 }

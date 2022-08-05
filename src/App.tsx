@@ -1,4 +1,4 @@
-import { Navbar, CardContainer } from "./components";
+import { Navbar, Sidebar, CardContainer } from "./components";
 import "./App.scss";
 import { data } from "./data/itemsData";
 
@@ -9,6 +9,7 @@ const App = () => {
     <div>
       <Navbar />
       <section className="main">
+        <Sidebar />
         <CardContainer data={data} />
       </section>
     </div>
