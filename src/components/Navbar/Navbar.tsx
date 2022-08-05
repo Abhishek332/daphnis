@@ -20,7 +20,7 @@ const Navbar = () => {
                 <h1>Medical Darpan</h1>
                 <div className="nav-items">
                     {
-                        navItems.map((navItem, i) => <NavItem {...navItem} />)
+                        navItems.map((navItem, i) => <NavItem key={`navItem-${i}`} {...navItem} />)
                     }
                 </div>
             </div>

@@ -5,7 +5,7 @@ const CardContainer: React.FC<CardContainerProps> = ({ data }) => {
     return (
         <div className="card-container">
             {
-                data.map((itemCardData, i) => <ItemCard {...itemCardData} />)
+                data.map((itemCardData, i) => <ItemCard key={`itemCard-${i}`} {...itemCardData} />)
             }
         </div>
     )

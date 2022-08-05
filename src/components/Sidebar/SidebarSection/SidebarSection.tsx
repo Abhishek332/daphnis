@@ -4,10 +4,11 @@ import { SetStateAction } from "react";
 import { useState } from "react";
 
 const SidebarSection: React.FC<sidebarSection> = ({ heading, options }) => {
-    const [selectedOption, setSelectedOption] = useState<string[]>(["acceclofinac",
+    const [selectedOption, setSelectedOption] = useState<string[]>(["paracetamol syrup",
         "megladrane simethicone"]);
 
     const Selector = (e: any) => {
+        // used event delegation here
         let value = e.target.innerText.toLowerCase();
         if (!selectedOption.includes(value)) {
             setSelectedOption([...selectedOption, value]);
@@ -34,10 +35,11 @@ const SidebarOption: React.FC<SidebarProps> = ({ name, isSelected = false }) => 
         style={isSelected
             ? { backgroundColor: "#32b8ad", color: "white" }
             : { color: "black" }}
-        onClick={() => { }}
     >
         <p>{name}</p>
-        <MdOutlineCancel size={16} style={isSelected ? { display: "block" } : { display: "none" }} />
+        {
+            isSelected && <MdOutlineCancel size={16} />
+        }
     </div>
 }
 
