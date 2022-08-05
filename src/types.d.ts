@@ -11,3 +11,10 @@ interface ItemCard {
   availableAt: string;
   contact: number;
 }
+
+type sidebarOptions = string[];
+
+interface sidebarSection {
+  heading: string;
+  options: sidebarOptions;
+}
